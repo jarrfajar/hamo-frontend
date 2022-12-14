@@ -42,7 +42,6 @@ This project is a starting point for a Flutter application.
    or
    composer update
    ```
-
 4. Database
 
    ```laravel
@@ -51,7 +50,18 @@ This project is a starting point for a Flutter application.
    import database
    ```
 
-5. Username and Password
+5. Set up Laravel configurations
+
+   ```laravel
+   copy .env.example .env
+   php artisan key:generate
+   ```
+6. Set your database in .env
+
+   ```laravel
+   DB_DATABASE=hamo
+   ```
+7. Login credentials
 
    ```laravel
    email: fajar@gmail.com
