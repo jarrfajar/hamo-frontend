@@ -13,8 +13,8 @@ Figma By Sobakhul Munir Siroj
 
 1. Clone the repo
 
-   ```go
-   gh repo clone RohmanBenyRiyanto/shamo-frontend
+   ```bash
+   git clone https://github.com/jarrfajar/hamo-frontend
    ```
 2. Install packages
 
