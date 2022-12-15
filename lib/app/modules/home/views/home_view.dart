@@ -39,7 +39,23 @@ class HomeView extends GetView<HomeController> {
               children: [
                 Row(
                   children: [
-                    const CircleAvatar(),
+                    // const CircleAvatar(),
+                    ClipOval(
+                      child: Container(
+                        height: 40,
+                        width: 40,
+                        // padding: const EdgeInsets.all(15),
+                        decoration: BoxDecoration(
+                          color: Colors.pink[100],
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                        child: Image.network(
+                          'https://ui-avatars.com/api/?name=Fajar+Yasin',
+                          // '${Api.domainUrl}/${category.img}',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
                     const SizedBox(
                       width: 10.0,
                     ),
@@ -173,13 +189,22 @@ class HomeView extends GetView<HomeController> {
                       ),
                       child: Column(
                         children: [
-                          Container(
-                            padding: const EdgeInsets.all(15),
-                            decoration: BoxDecoration(
-                              color: Colors.pink[100],
-                              borderRadius: BorderRadius.circular(50),
+                          ClipOval(
+                            child: Container(
+                              height: 50,
+                              width: 50,
+                              // padding: const EdgeInsets.all(15),
+                              decoration: BoxDecoration(
+                                color: Colors.pink[100],
+                                borderRadius: BorderRadius.circular(50),
+                              ),
+                              // child: const Icon(Icons.abc),
+                              child: Image.network(
+                                // 'https://ui-avatars.com/api/?name=Fajar+Yasin',
+                                '${Api.domainUrl}/${category.img}',
+                                fit: BoxFit.cover,
+                              ),
                             ),
-                            child: const Icon(Icons.abc),
                           ),
                           const SizedBox(
                             height: 5.0,

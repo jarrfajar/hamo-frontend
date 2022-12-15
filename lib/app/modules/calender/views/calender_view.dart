@@ -60,7 +60,8 @@ class CalenderView extends GetView<CalenderController> {
                 var inputDate = DateTime.parse(parseDate.toString());
 
                 controller.date.value = date.value.toString();
-                print(date.value);
+                print(controller.date.value);
+                print(controller.bookings.length);
 
                 // print(parseDate);
               },

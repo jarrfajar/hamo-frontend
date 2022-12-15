@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:hamo/app/api/api.dart';
 import 'package:hamo/app/models/Category.dart' as category_model;
 import 'package:hamo/app/reusable/shimmer/category.dart';
 import 'package:hamo/app/routes/app_pages.dart';
@@ -52,13 +53,22 @@ class CategoryView extends GetView<CategoryController> {
                     ),
                     child: Column(
                       children: [
-                        Container(
-                          padding: const EdgeInsets.all(15),
-                          decoration: BoxDecoration(
-                            color: Colors.pink[100],
-                            borderRadius: BorderRadius.circular(50),
+                        ClipOval(
+                          child: Container(
+                            height: 50,
+                            width: 50,
+                            // padding: const EdgeInsets.all(15),
+                            decoration: BoxDecoration(
+                              color: Colors.pink[100],
+                              borderRadius: BorderRadius.circular(50),
+                            ),
+                            // child: const Icon(Icons.abc),
+                            child: Image.network(
+                              // 'https://ui-avatars.com/api/?name=Fajar+Yasin',
+                              '${Api.domainUrl}/${category.img}',
+                              fit: BoxFit.cover,
+                            ),
                           ),
-                          child: const Icon(Icons.abc),
                         ),
                         const SizedBox(
                           height: 5.0,

@@ -41,8 +41,8 @@ class CalenderController extends GetxController {
             var upcoming = data.where((elemet) => elemet.status == 'Upcoming').toList();
 
             bookings.addAll(upcoming);
+            print(bookings.length);
           }
-          print(bookings.length);
           return bookings;
         }
       }

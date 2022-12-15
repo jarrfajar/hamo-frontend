@@ -8,6 +8,9 @@ Figma By Sobakhul Munir Siroj
    https://www.figma.com/community/file/1111338473512770566
 ```
 
+## Preview
+![img 1](preview.png)
+
 ## Installation Flutter
 
 

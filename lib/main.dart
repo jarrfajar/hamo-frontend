@@ -9,6 +9,7 @@ void main() {
   final pageController = Get.put(PageIndexController(), permanent: true);
   runApp(
     GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Application",
       theme: ThemeData(scaffoldBackgroundColor: const Color(0xffffffff)),
       // darkTheme: ThemeData.,
